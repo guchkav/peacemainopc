@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="
+	home.css">
+</head>
+<body ng-app="" ng-controller="myCtrl" ng-init="readCSV()">
+	<header>
+		Indian Premier League
+	</header>
+<div class="angular-class">
+ <div class="live-matches"></div>
+ <div class="previous-matches">
+ 	<div class="previous-matches-list">
+ 		
+ 	</div>
+	
+ </div>
+</div>
+<script>
+function myCtrl($scope, $http) {
+	$scope.readCSV = function() {
+		// http get request to read CSV file content
+		$http.get('../ang/matches.csv').success($scope.processData);
+	};
+
+	$scope.processData = function(allText) {
+		// split content based on new line
+		var allTextLines = allText.split(/\r\n|\n/);
+		//var headers = allTextLines[0].split(',');
+		var lines = [];
+
+		for ( var i = 1; i < allTextLines.length; i++) {
+			// split content based on comma
+			var data = allTextLines[i].split(',');
+			lines.push(data[4] + " v/s " + data[5]);
+		}
+		$scope.data = lines;
+	};
+}
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</body>
+</html>
