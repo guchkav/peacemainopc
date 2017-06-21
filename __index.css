@@ -45,24 +45,17 @@ header{
 	border-radius: 2px;
 }
 .header-menu{
-	display: none;
 	position: absolute;
-	top: 45px;
-	left: -80px;
-	width: 100%;
-	-webkit-transition: left 300ms ease;
-	-moz-transition: left 300ms ease;
-	-ms-transition: left 300ms ease;
-	-o-transition: left 300ms ease;
-	transition: left 300ms ease;
+	top: 42px;
+	left: -250px;
+	width: 250px;
+	height: 1000px;
+	background: linear-gradient(-141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	transition: left 200ms ease-out;
 }
 .header-menu-active{
 	left: 0px;
-	-webkit-transition: left 300ms ease;
-	-moz-transition: left 300ms ease;
-	-ms-transition: left 300ms ease;
-	-o-transition: left 300ms ease;
-	transition: left 300ms ease;
+	transition: left 200ms ease-out;
 }
 .header-menu ul,li{
 	padding: 0px;
@@ -70,14 +63,12 @@ header{
 }
 .header-menu ul{
 	list-style-type: none;
-	display: inline-block;
-	padding: 5px;
+	padding: 15px;
 }
 .header-menu li{
-	border-bottom: 1px solid #fff;
 	color: #fff;
-	width: 100%;
-	text-align: left;
+	padding: 10px;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
 }
 
 .main-article{
@@ -106,6 +97,8 @@ header{
 		display: block;
 		position: initial;
 		width: 80%;
+		height: auto;
+		background: initial;
 	}
 	.header-menu ul,li{
 		padding: 0px;
@@ -126,11 +119,11 @@ header{
 		background-size: 200% 200%;	    
 		background-image: 
 		linear-gradient(to top, #FFF 50%, transparent 50%);
-		-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-webkit-transition: background-position 300ms, color 300ms ease;
+		-moz-transition: background-position 300ms, color 300ms ease;
+		-ms-transition: background-position 300ms, color 300ms ease;
+		-o-transition: background-position 300ms, color 300ms ease;
+		transition: background-position 300ms, color 300ms ease;
 	}
 	.header-menu li:hover{
 		color: #000;
@@ -138,11 +131,11 @@ header{
 		background-image: 
 		linear-gradient(to top, #FFF 51%, transparent 50%);
 		background-position: 0 100%;
-		-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-webkit-transition: background-position 300ms, color 300ms ease;
+		-moz-transition: background-position 300ms, color 300ms ease;
+		-ms-transition: background-position 300ms, color 300ms ease;
+		-o-transition: background-position 300ms, color 300ms ease;
+		transition: background-position 300ms, color 300ms ease;
 	}
 
 }
@@ -161,6 +154,8 @@ header{
 		display: block;
 		position: initial;
 		width: 80%;
+		height: auto;
+		background: initial;
 	}
 	.header-menu ul,li{
 		padding: 0px;
@@ -181,11 +176,11 @@ header{
 		background-size: 200% 200%;	    
 		background-image: 
 		linear-gradient(to top, #FFF 50%, transparent 50%);
-		-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-webkit-transition: background-position 300ms, color 300ms ease;
+		-moz-transition: background-position 300ms, color 300ms ease;
+		-ms-transition: background-position 300ms, color 300ms ease;
+		-o-transition: background-position 300ms, color 300ms ease;
+		transition: background-position 300ms, color 300ms ease;
 	}
 	.header-menu li:hover{
 		color: #000;
@@ -193,10 +188,10 @@ header{
 		background-image: 
 		linear-gradient(to top, #FFF 51%, transparent 50%);
 		background-position: 0 100%;
-		-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
-		transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-webkit-transition: background-position 300ms, color 300ms ease;
+		-moz-transition: background-position 300ms, color 300ms ease;
+		-ms-transition: background-position 300ms, color 300ms ease;
+		-o-transition: background-position 300ms, color 300ms ease;
+		transition: background-position 300ms, color 300ms ease;
 	}
 }
